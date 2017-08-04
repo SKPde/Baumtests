@@ -16,9 +16,19 @@ public class BaumHauptprogramm {
 		System.out.println(baum.toString());
 		
 		Object[] aftersort = baum.toArray();
+		int[] sortiert = new int[baum.size()];
 		int after = (int) aftersort[14];
 		
 		System.out.println(after);
+		
+		for(int x = 0; x < baum.size(); x++) {
+			sortiert[x] = (int) aftersort[x];
+		}
+		
+		
+		for(int x = 0; x < sortiert.length; x++) {
+			System.out.print(sortiert[x] + " ");
+		}
 		
 	}
 
